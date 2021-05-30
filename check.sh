@@ -2,7 +2,7 @@
 
 echo "Checking changes in $1"
 
-OUTPUT=`git diff HEAD^ HEAD --raw -- $1`
+OUTPUT=`git diff HEAD^ HEAD --raw -- ./`
 LEN=${#OUTPUT}
 
 if (("$LEN" > 0)) ; then
